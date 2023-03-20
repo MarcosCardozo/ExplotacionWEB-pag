@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+    <title>Explotación de Datos WEB</title>
+    <link rel="shortcut icon" href="resources/web.png" type="image/x-icon" />
 
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/style-func.css" />
@@ -33,7 +35,7 @@
             <a href="libcurl.html">Libcurl</a>
           </li>
           <li class="nav-item">
-            <a href="proyectos.html">Enlace3</a>
+            <a href="operaciones.html">Operaciones</a>
           </li>
           <li class="nav-item">
             <a href="contacto.html">Enlace4</a>
@@ -58,13 +60,19 @@
     })
     .catch(error => console.error(error));
         </code></pre>
-        <br>
-        <p>En el codigo anterior hacemos una solicitud <strong>HEAD</strong> a la url de la <a href="http://ingenieria.uner.edu.ar/" target="_blank">Facultad de ingenieria de UNER</a>, para obtener los encabezados de la página.</p>
-      
-        <br>
+        <br />
+        <p>
+          En el codigo anterior hacemos una solicitud <strong>HEAD</strong> a la
+          url de la
+          <a href="http://ingenieria.uner.edu.ar/" target="_blank"
+            >Facultad de ingenieria de UNER</a
+          >, para obtener los encabezados de la página.
+        </p>
+
+        <br />
 
         <h2>También se puede realizar desde consola</h2>
-        <br>
+        <br />
         <pre><code>
   curl -I http://ingenieria.uner.edu.ar/
         </code></pre>
