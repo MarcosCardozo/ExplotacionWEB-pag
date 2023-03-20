@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Explotación de Datos WEB</title>
-</head>
-<body>
-        <header>
+
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header>
       <nav class="navbar">
         <a href="#" class="logo" title="Inicio">
           <svg
@@ -24,13 +26,13 @@
 
         <ul class="secciones">
           <li class="nav-item">
+            <a href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
             <a href="funcionamiento.html">Funcionamiento</a>
           </li>
           <li class="nav-item">
             <a href="libcurl.html">Libcurl</a>
-          </li>
-          <li class="nav-item">
-            <a href="#">Operaciones</a>
           </li>
           <li class="nav-item">
             <a href="ejemplos.html">Ejemplos</a>
@@ -41,7 +43,48 @@
 
     <main>
       <section>
+        <h1>Operaciones con cURL</h1>
+        <br />
+        <p>
+          Curl ofrece diversas herramientas y opciones que pueden ser útiles en
+          el desarrollo y la administración de aplicaciones web y servicios.
+          Algunas de las herramientas más comunes incluyen:
+        </p>
+        <ul>
+          <li>
+            Transferencia de datos: Curl puede enviar y recibir datos a través
+            de diferentes protocolos de red, como HTTP, HTTPS, FTP, SMTP, IMAP,
+            POP3, y otros.
+          </li>
+          <li>
+            Descarga de archivos: Con Curl, es posible descargar archivos desde
+            servidores web utilizando el protocolo HTTP o FTP. Además, Curl
+            puede ser utilizado para descargar archivos de forma recursiva desde
+            un sitio web.
+          </li>
+          <li>
+            Envío de datos: Curl puede enviar datos a través de formularios web
+            utilizando el método POST, así como enviar datos en formato JSON o
+            XML a través de solicitudes HTTP personalizadas.
+          </li>
+          <li>
+            Autenticación: Curl permite la autenticación a través de diferentes
+            métodos, como el uso de nombres de usuario y contraseñas, tokens de
+            acceso, y certificados digitales.
+          </li>
+          <li>
+            Personalización de solicitudes HTTP: Curl permite personalizar las
+            solicitudes HTTP mediante la adición de encabezados personalizados,
+            establecimiento de tiempos de espera, redirecciones, y manejo de
+            cookies.
+          </li>
+        </ul>
+        <p>
+          En general, Curl es una herramienta muy versátil que puede ser
+          utilizada para una amplia variedad de tareas relacionadas con la
+          transferencia de datos a través de la red.
+        </p>
       </section>
     </main>
-</body>
+  </body>
 </html>
