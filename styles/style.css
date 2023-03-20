@@ -44,7 +44,7 @@ a {
     font-weight: bold;
 }
 
-a:hover {
+a:hover:not(nav a) {
     text-decoration: underline;
 }
 
