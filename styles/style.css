@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    /*Para ajustar el alto*/
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+}
+
+main {
+    height: 100%;
+    /*ajusto el alto*/
+    margin: 0 18rem 0;
+    padding: 2rem;
+    background-color: white;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #0070c0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*NAV*/
+/*---------------------------------*/
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*Separa los dos elementos del nav y los ubica en ambos extremos*/
+    background-color: rgb(24 24 27);
+    padding-left: 1rem;
+}
+
+.logo {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.logo svg {
+    /*centra el text con la imagen*/
+    float: left;
+    fill: white;
+    padding-right: .5rem;
+}
+
+.secciones {
+    list-style: none;
+    overflow: hidden;
+}
+
+.secciones li {
+    /*La lista pasa de Vertical a Horizontal y agrega un margin*/
+    float: left;
+    margin-left: .5rem;
+}
+
+.secciones li a {
+    display: block;
+    padding: 25px;
+    /*Centra el texto al centro en la caja agregando padding*/
+    text-decoration: none;
+    color: white;
+}
+
+.secciones li a:hover {
+    background: #7a7a7a
+}
