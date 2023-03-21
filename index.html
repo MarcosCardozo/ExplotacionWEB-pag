@@ -46,17 +46,23 @@
 
     <main>
       <section>
-        <h1 class="titulo">¿Qué es cURL?</h1>
-        <br>
+        <h1>Solicitudes a Servidores</h1>
+        <br />
         <p>
-          Curl (cURL) es la abreviatura de “Client URL” y es una herramienta de línea
-          de comandos utilizada para la transferencia de ficheros con formato
-          URL.
+          Existen dos herramientas principales para realizar solicitudes a
+          servidores "cURL" y "Fetch", y las veremos a continuación
+        </p>
+        <br />
+        <h2 class="titulo">cURL</h2>
+        <p>
+          Curl (cURL) es la abreviatura de “Client URL” y es una herramienta de
+          línea de comandos utilizada para la transferencia de ficheros con
+          formato URL.
         </p>
         <p>Soporta multitud de protocolos entre los que se encuentran</p>
-        <br>
+        <br />
 
-        <h2 class="titulo">Algunos protocolos que soporta</h2>
+        <h3 class="titulo">Algunos protocolos que soporta</h3>
         <ul>
           <li>FTP</li>
           <li>SFTP</li>
@@ -76,6 +82,29 @@
           servidor en lugar de tener que acceder a él desde un navegador. Los
           scripts basados en comandos cURL (en inglés: cURL commands) se
           utilizan para automatizar procesos, depurar y realizar pruebas.
+        </p>
+        <br />
+        <h2>Fetch</h2>
+        <p>
+          "Fetch" es un método para realizar solicitudes HTTP y obtener
+          respuestas en JavaScript, utilizado principalmente en navegadores web
+          modernos. Fetch se basa en promesas, lo que significa que una
+          solicitud se envía y se resuelve de manera asincrónica en el código
+          del cliente. Fetch es una API moderna y más fácil de usar que las
+          antiguas API XMLHttpRequest (XHR) y admite un amplio conjunto de
+          opciones, como el manejo de CORS, el envío de cookies y el manejo de
+          errores.
+        </p>
+
+        <br />
+        <p>
+          Aunque tanto curl como fetch tienen una funcionalidad similar en
+          términos generales, cada una tiene un enfoque diferente y se utiliza
+          en contextos diferentes. Curl es una herramienta de línea de comando
+          potente y flexible utilizada principalmente para pruebas y debugging,
+          mientras que fetch es una API moderna de JavaScript utilizada
+          principalmente en el desarrollo de aplicaciones web del lado del
+          cliente.
         </p>
       </section>
     </main>
