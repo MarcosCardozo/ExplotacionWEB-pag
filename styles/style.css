@@ -103,14 +103,14 @@ a:hover:not(nav a) {
 footer{
     background-color:rgb(24 24 27);
 	color: #fff;
-    padding: 1.5rem 18rem;
+    padding: 1.5rem 19rem;
     display: grid;
     grid-template: 50px / auto auto auto;   /*la grilla va a tener 3 columnas de 50px cada una*/
 }
 
 footer .redes a{
     color: #fff;
-    text-decoration: none;
+    text-decoration: none !important;
     padding-right: 1rem;
 }
 
