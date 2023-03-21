@@ -47,9 +47,57 @@
     <main>
       <section>
         <h1>Funcionamiento</h1>
+        <br />
         <p>
-          cURL se puede integrar en scripts. De este modo, se pueden automatizar
-          operaciones como subir o descargar datos.
+          Aunque tanto curl como fetch tienen una funcionalidad similar en
+          términos generales, cada una tiene un enfoque diferente y se utiliza
+          en contextos diferentes. Curl es una herramienta de línea de comando
+          potente y flexible utilizada principalmente para pruebas y debugging,
+          mientras que fetch es una API moderna de JavaScript utilizada
+          principalmente en el desarrollo de aplicaciones web del lado del
+          cliente.
+        </p>
+
+        <h3>CURL</h3>
+        <p>
+          Para utilizar Curl, es necesario abrir una terminal o consola de
+          comandos en el sistema operativo y ejecutar el comando "curl" seguido
+          de la URL del servidor y cualquier otra opción o argumento necesario.
+          Por ejemplo, para enviar una solicitud GET a la URL de la
+          <a href="http://ingenieria.uner.edu.ar/" target="_blank"
+            >Facultad de ingenieria de UNER</a
+          >, se puede ejecutar el siguiente comando que nos traera los
+          encabezados de la pagina:
+        </p>
+
+        <pre><code>
+  curl -I http://ingenieria.uner.edu.ar/
+          </code></pre>
+
+        <br />
+        <p>También podemos hacer un POST</p>
+
+        <pre><code>
+  curl -d "nombre=Marcos&correo=marcos@example.com" https://www.ejemplo.com/formulario
+          </code></pre>
+
+        <br />
+        <h3>FETCH</h3>
+        <p>
+          Fetch es una API moderna de JavaScript que permite enviar solicitudes
+          HTTP y obtener respuestas en el lado del cliente, como en un navegador
+          web. Fetch utiliza promesas para realizar solicitudes asincrónicas a
+          un servidor y manejar las respuestas recibidas. 
+        </p>
+        <p>
+          Para utilizar fetch en
+          JavaScript, se utiliza el método "fetch" que toma como argumento una
+          URL y devuelve una promesa que se resuelve con la respuesta del
+          servidor. El siguiente es un ejemplo de cómo utilizar fetch
+          para enviar una solicitud <b>HEAD</b> a la URL de la <a href="http://ingenieria.uner.edu.ar/" target="_blank"
+            >Facultad de ingenieria de UNER</a
+          > y obtener los encabezados del
+          servidor:
         </p>
         <pre><code>
   fetch('http://ingenieria.uner.edu.ar/', { method: 'HEAD' })
@@ -60,27 +108,10 @@
     })
     .catch(error => console.error(error));
         </code></pre>
-        <br />
-        <p>
-          En el codigo anterior hacemos una solicitud <strong>HEAD</strong> a la
-          url de la
-          <a href="http://ingenieria.uner.edu.ar/" target="_blank"
-            >Facultad de ingenieria de UNER</a
-          >, para obtener los encabezados de la página.
-        </p>
-
-        <br />
-
-        <h2>También se puede realizar desde consola</h2>
-        <br />
-        <pre><code>
-  curl -I http://ingenieria.uner.edu.ar/
-        </code></pre>
       </section>
     </main>
 
-        
-        <!--Footer-->
+    <!--Footer-->
     <footer>
       <div class="redes">
         <div class="logo">
